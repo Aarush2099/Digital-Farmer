@@ -190,53 +190,6 @@ Import LeafDiseaseDetector, initialize detector, load and encode test image with
 - **Maximum Image Size**: 10MB per upload
 - **Concurrent Request Handling**: Optimized for multiple simultaneous analyses
 
-## 🌐 Production Deployment
-
-### Vercel Deployment (Recommended)
-This project is optimized for Vercel with the included vercel.json configuration.
-
-#### Quick Deploy:
-**Install Vercel CLI:**
-- Command: npm install -g vercel
-
-**Deploy to production:**
-- Command: vercel --prod
-
-**Set environment variables in Vercel dashboard:**
-- GROQ_API_KEY: Your Groq API key
-
-#### Environment Variables Setup:
-1. Access your Vercel project dashboard
-2. Navigate to Settings → Environment Variables
-3. Add the following variables:
-   - GROQ_API_KEY: Your Groq API authentication key
-   - MODEL_NAME: (Optional) Custom model identifier
-   - DEFAULT_TEMPERATURE: (Optional) AI response creativity level
-
-### Alternative Deployment Platforms
-
-#### Streamlit Cloud (For Streamlit App)
-**Deploy main.py to Streamlit Cloud:**
-1. Push code to GitHub
-2. Connect repository to https://share.streamlit.io/
-3. Add secrets in Streamlit Cloud dashboard
-
-#### Railway Deployment
-**Deploy with Railway CLI:**
-- Commands: railway login, railway init, railway up
-
-#### Docker Containerization
-**Example Dockerfile for containerized deployment:**
-- Base image: python:3.9-slim
-- Working directory: /app
-- Install requirements and copy application files
-- Expose port 8000
-- Run with uvicorn app:app
-
-#### Heroku Deployment
-**Deploy to Heroku:**
-- Commands: heroku create your-app-name, heroku config:set GROQ_API_KEY=your_api_key, git push heroku main
-
 ## 🔧 Advanced Configuration
 
 ### Environment Variables Reference
@@ -267,12 +220,12 @@ This project is optimized for Vercel with the included vercel.json configuration
 - **Color Space**: RGB (automatic conversion from other formats)
 
 #### Performance Tuning:
-Optimize image for faster processing while maintaining quality by implementing size optimization in utils.py
+Optimize the image for faster processing while maintaining quality by implementing size optimization in utils.py
 
 ### Streamlit UI Customization
 
 #### Modify Visual Theme in main.py:
-Update the CSS styling for custom branding including background gradients, result card styling, colors, fonts, and layout modifications.
+Update the CSS styling for custom branding, including background gradients, result card styling, colors, fonts, and layout modifications.
 
 ### API Rate Limiting & Security
 
@@ -292,11 +245,11 @@ Add slowapi limiter to app.py for production deployments with configurable reque
 #### Fungal Diseases (40+ varieties):
 - Leaf spot diseases, blights, rusts, mildews, anthracnose
 - Early/late blight, powdery mildew, downy mildew
-- Septoria leaf spot, cercospora leaf spot, black spot
+- Septoria leaf spot, Cercospora leaf spot, black spot
 
 #### Bacterial Diseases (15+ varieties):
 - Bacterial leaf spot, fire blight, bacterial wilt
-- Xanthomonas infections, pseudomonas diseases
+- Xanthomonas infections, Pseudomonas diseases
 - Crown gall, bacterial canker
 
 #### Viral Diseases (20+ varieties):
@@ -310,7 +263,7 @@ Add slowapi limiter to app.py for production deployments with configurable reque
 - Caterpillar feeding, leaf miner trails
 
 #### Nutrient Deficiencies (10+ types):
-- Nitrogen, phosphorus, potassium deficiencies
+- Nitrogen, phosphorus, and potassium deficiencies
 - Micronutrient deficiencies (iron, magnesium, calcium)
 - pH-related nutrient lockout symptoms
 
@@ -347,37 +300,6 @@ The analyze_leaf_image_base64 method follows these steps:
 - **Memory Usage**: <512MB per analysis
 - **Storage Requirements**: Stateless processing (no local storage needed)
 
-## 🤝 Contributing & Development
-
-### Development Setup
-**Fork and clone the repository:**
-- Commands: git clone https://github.com/your-username/digital-farmer.git, cd digital-farmer/Front
-
-**Create development environment:**
-- Commands: python -m venv dev-env, .\\dev-env\\Scripts\\Activate.ps1
-
-**Install development dependencies:**
-- Commands: pip install -r requirements.txt, pip install pytest black isort mypy
-
-### Code Quality Standards
-- **Style Guide**: PEP 8 compliance with Black formatter
-- **Type Hints**: Full type annotation using mypy
-- **Documentation**: Comprehensive docstrings for all classes and methods
-- **Testing**: Unit tests for core functionality with pytest
-- **Error Handling**: Robust exception handling and logging
-
-### Development Workflow
-1. **Create Feature Branch**: git checkout -b feature/amazing-feature
-2. **Implement Changes**: Follow coding standards and add tests
-3. **Run Quality Checks**:
-   - Code formatting: black . --check
-   - Import sorting: isort . --check-only
-   - Type checking: mypy .
-   - Run test suite: pytest tests/
-4. **Commit Changes**: git commit -m 'feat: Add amazing feature'
-5. **Push Branch**: git push origin feature/amazing-feature
-6. **Create Pull Request**: Submit PR with detailed description
-
 ### Project Structure Guidelines
 **Front/ directory contains:**
 - main.py (Streamlit frontend with UI/UX focus)
@@ -389,7 +311,7 @@ The analyze_leaf_image_base64 method follows these steps:
 - docs/ (Additional documentation)
 
 ### Contributing Guidelines
-- **Bug Reports**: Use [GitHub Issues](https://github.com/shukur-alom/digital-farmer/issues) with detailed reproduction steps
+- **Bug Reports**: Use [GitHub Issues](https://github.com/Aarush2099/digital-farmer/issues) with detailed reproduction steps
 - **Feature Requests**: Propose new features with use case descriptions
 - **Code Contributions**: Follow the development workflow above
 - **Documentation**: Update README.md and docstrings for any changes
@@ -419,9 +341,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 ### Getting Help
 - **📚 Documentation**: Complete guides in this README
-- **🐛 Bug Reports**: [GitHub Issues](https://github.com/shukur-alom/digital-farmer/issues)
-- **💡 Feature Requests**: [GitHub Discussions](https://github.com/shukur-alom/digital-farmer/discussions)
-- **👥 Community**: Join our developer community for collaboration
+- **🐛 Bug Reports**: [GitHub Issues](https://github.com/Aarush2099/digital-farmer/issues)
 
 ### Professional Support
 - **Commercial Licensing**: Contact for enterprise deployment options
@@ -430,8 +350,8 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 - **Technical Support**: Priority support packages for production deployments
 
 ### Contact Information
-- **Project Maintainer**: [@shukur-alom](https://github.com/shukur-alom)
-- **Project Repository**: [digital-farmer](https://github.com/shukur-alom/digital-farmer)
+- **Project Maintainer**: [@shukur-alom](https://github.com/Aarush2099)
+- **Project Repository**: [digital-farmer](https://github.com/Aarush2099/digital-farmer)
 - **Issue Tracking**: GitHub Issues for bug reports and feature requests
 - **Email Support**: Available through GitHub contact options
 
@@ -477,7 +397,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 ![Plant Health](https://img.shields.io/badge/Plant%20Health-AI%20Powered-brightgreen?style=for-the-badge&logo=leaf)
 ![Precision Agriculture](https://img.shields.io/badge/Precision%20Agriculture-Innovation-orange?style=for-the-badge&logo=agriculture)
 
-[🚀 **Live Demo**](https://leaf-diseases-detect5.streamlit.app) • [🐛 **Report Issues**](https://github.com/shukur-alom/digital-farmer/issues) • [💡 **Request Features**](https://github.com/shukur-alom/digital-farmer/discussions)
+[🚀 **Live Demo**](https://digital-farmer-2bcgdkrfhtf5kqwzj67mye.streamlit.app/#leaf-disease-detection) • [🐛 **Report Issues**](https://github.com/Aarush2099/digital-farmer/issues) • [💡 **Request Features**](https://github.com/shukur-alom/digital-farmer/discussions)
 
 **Star ⭐ this repository if it helped you protect your plants!**
 
