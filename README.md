@@ -1,4 +1,4 @@
-# 🌿 Leaf Disease Detection System
+# 🌿 Digital Farmer
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.116.1-009688.svg?style=flat&logo=fastapi)](https://fastapi.tiangolo.com/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-FF4B4B.svg?style=flat&logo=streamlit)](https://streamlit.io/)
@@ -6,13 +6,7 @@
 [![Groq](https://img.shields.io/badge/Groq-AI%20Powered-orange.svg?style=flat)](https://groq.com/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](LICENSE)
 
-An enterprise-grade AI-powered leaf disease detection system featuring a dual-interface architecture: a FastAPI backend service and an interactive Streamlit web application. Built with Meta's Llama Vision models via Groq API, this system provides accurate disease identification, severity assessment, and actionable treatment recommendations for agricultural and horticultural applications.
-
-## System Demo
-
-![Leaf Disease Detection Demo](https://github.com/shukur-alom/leaf-diseases-detect/blob/main/Media/video.gif)
-
-*Experience the power of AI-driven plant health analysis in action*
+An enterprise-grade AI-powered digital farmer system featuring a dual-interface architecture: a FastAPI backend service and an interactive Streamlit web application. Built with Meta's Llama Vision models via Groq API, this system provides accurate disease identification, severity assessment, and actionable treatment recommendations for agricultural and horticultural applications.
 
 ## 🎯 Key Features
 
@@ -27,7 +21,7 @@ An enterprise-grade AI-powered leaf disease detection system featuring a dual-in
 ### 🏗️ Architecture Components
 - **FastAPI Backend (app.py)**: RESTful API service with automatic OpenAPI documentation
 - **Streamlit Frontend (main.py)**: Interactive web interface with modern UI/UX design
-- **Core AI Engine (Leaf Disease/main.py)**: Advanced disease detection engine powered by Meta Llama Vision
+- **Core AI Engine (Digital Farmer/main.py)**: Advanced digital farmer engine powered by Meta Llama Vision
 - **Utility Layer (utils.py)**: Image processing and data transformation utilities
 - **Cloud Deployment**: Production-ready with Vercel integration and scalable architecture
 
@@ -38,7 +32,7 @@ An enterprise-grade AI-powered leaf disease detection system featuring a dual-in
 **Main Application Components:**
 - **🚀 main.py** - Streamlit Web Application with interactive UI components, real-time image preview, results visualization, and modern CSS styling
 - **🔧 app.py** - FastAPI Backend Service with RESTful API endpoints, file upload handling, error management, and JSON response formatting
-- **🧠 Leaf Disease/main.py** - Core AI Detection Engine containing the LeafDiseaseDetector class, DiseaseAnalysisResult dataclass, Groq API integration, base64 image processing, response parsing and comprehensive error handling
+- **🧠 Digital Farmer/main.py** - Core AI Detection Engine containing the LeafDiseaseDetector class, DiseaseAnalysisResult dataclass, Groq API integration, base64 image processing, response parsing, and comprehensive error handling
 
 **Supporting Files:**
 - **🛠️ utils.py** - Image processing utilities and helper functions
@@ -47,9 +41,9 @@ An enterprise-grade AI-powered leaf disease detection system featuring a dual-in
 - **⚙️ vercel.json** - Deployment configuration for cloud platforms
 - **📁 Media/** - Sample test images for development and testing
 
-### Core Module: Leaf Disease/main.py
+### Core Module: Digital Farmer/main.py
 
-The heart of the system, featuring the **LeafDiseaseDetector Class** which provides advanced AI-powered leaf disease detection using Groq's Llama Vision models. This class supports multi-format image input (JPEG, PNG, WebP, BMP, TIFF), automatic base64 encoding, structured JSON output with comprehensive disease information, robust error handling and response validation, plus configurable AI model parameters.
+The heart of the system, featuring the **LeafDiseaseDetector Class**, which provides advanced AI-powered digital farmer using Groq's Llama Vision models. This class supports multi-format image input (JPEG, PNG, WebP, BMP, TIFF), automatic base64 encoding, structured JSON output with comprehensive disease information, robust error handling and response validation, plus configurable AI model parameters.
 
 The **DiseaseAnalysisResult DataClass** serves as a structured container for disease analysis results, including boolean detection status, specific disease identification, category classification, severity assessment levels, AI confidence scores (0-100%), observable symptom lists, environmental and biological factors, evidence-based treatment recommendations, and ISO 8601 timestamps.
 
@@ -62,11 +56,11 @@ The **DiseaseAnalysisResult DataClass** serves as a structured container for dis
 
 ### 1. Repository Setup
 **Clone the repository:**
-- Run: git clone https://github.com/shukur-alom/leaf-diseases-detect.git
-- Navigate to: cd leaf-diseases-detect/Front
+- Run: git clone https://github.com/Aarush2099/digital-farmer.git
+- Navigate to: cd digital-farmer/Front
 
 **Create and activate virtual environment (recommended):**
-- Windows PowerShell: python -m venv venv then .\venv\Scripts\Activate.ps1
+- Windows PowerShell: python -m venv venv then .\\venv\\Scripts\\Activate.ps1
 - Linux/macOS: python -m venv venv then source venv/bin/activate
 
 ### 2. Dependencies Installation
@@ -102,12 +96,12 @@ Create a .env file in the project root with the following variables:
 
 ### Streamlit Web Interface (main.py)
 
-The Streamlit application provides an intuitive web interface for leaf disease detection:
+The Streamlit application provides an intuitive web interface for digital farmer:
 
 #### Key Features:
 - **Drag-and-drop image upload** with instant preview
-- **Real-time disease analysis** with progress indicators
-- **Professional result display** with modern CSS styling
+- **Real-time digital farmer** with progress indicators
+- **Professional result display** with modern UI/UX design
 - **Comprehensive disease information** including symptoms, causes, and treatments
 - **Responsive design** optimized for desktop and mobile devices
 
@@ -143,11 +137,11 @@ A JSON object containing:
 Root endpoint providing API information and status.
 
 **Response:**
-- message: "Leaf Disease Detection API"
+- message: "Digital Farmer API"
 - version: "1.0.0"
 - endpoints: Available endpoint descriptions
 
-### Core Detection Engine (Leaf Disease/main.py)
+### Core Detection Engine (Digital Farmer/main.py)
 
 #### LeafDiseaseDetector.analyze_leaf_image_base64()
 Core analysis method for base64 encoded images.
@@ -169,7 +163,7 @@ Initialize detector with LeafDiseaseDetector(), then call analyze_leaf_image_bas
 **Run comprehensive tests:**
 - API tests: python test_api.py
 - Image processing: python utils.py
-- Core detection: python "Leaf Disease/main.py"
+- Core detection: python "Digital Farmer/main.py"
 
 ### Manual Testing Options
 
@@ -258,7 +252,7 @@ This project is optimized for Vercel with the included vercel.json configuration
 #### Temperature Settings:
 - **0.0-0.3**: Conservative, factual responses (recommended for medical applications)
 - **0.4-0.7**: Balanced creativity and accuracy
-- **0.8-2.0**: High creativity (not recommended for disease detection)
+- **0.8-2.0**: High creativity (not recommended for digital farmer)
 
 #### Model Selection:
 **Current model:** meta-llama/llama-4-scout-17b-16e-instruct
@@ -357,10 +351,10 @@ The analyze_leaf_image_base64 method follows these steps:
 
 ### Development Setup
 **Fork and clone the repository:**
-- Commands: git clone https://github.com/your-username/leaf-diseases-detect.git, cd leaf-diseases-detect/Front
+- Commands: git clone https://github.com/your-username/digital-farmer.git, cd digital-farmer/Front
 
 **Create development environment:**
-- Commands: python -m venv dev-env, .\dev-env\Scripts\Activate.ps1
+- Commands: python -m venv dev-env, .\\dev-env\\Scripts\\Activate.ps1
 
 **Install development dependencies:**
 - Commands: pip install -r requirements.txt, pip install pytest black isort mypy
@@ -390,12 +384,12 @@ The analyze_leaf_image_base64 method follows these steps:
 - app.py (FastAPI backend with API endpoints)
 - utils.py (Shared utilities and helpers)
 - test_api.py (Integration tests)
-- Leaf Disease/ (Core AI detection engine and configuration)
+- Digital Farmer/ (Core AI detection engine and configuration)
 - tests/ (Unit test directory for all components)
 - docs/ (Additional documentation)
 
 ### Contributing Guidelines
-- **Bug Reports**: Use GitHub Issues with detailed reproduction steps
+- **Bug Reports**: Use [GitHub Issues](https://github.com/shukur-alom/digital-farmer/issues) with detailed reproduction steps
 - **Feature Requests**: Propose new features with use case descriptions
 - **Code Contributions**: Follow the development workflow above
 - **Documentation**: Update README.md and docstrings for any changes
@@ -425,8 +419,8 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 ### Getting Help
 - **📚 Documentation**: Complete guides in this README
-- **🐛 Bug Reports**: [GitHub Issues](https://github.com/shukur-alom/leaf-diseases-detect/issues)
-- **💡 Feature Requests**: [GitHub Discussions](https://github.com/shukur-alom/leaf-diseases-detect/discussions)
+- **🐛 Bug Reports**: [GitHub Issues](https://github.com/shukur-alom/digital-farmer/issues)
+- **💡 Feature Requests**: [GitHub Discussions](https://github.com/shukur-alom/digital-farmer/discussions)
 - **👥 Community**: Join our developer community for collaboration
 
 ### Professional Support
@@ -437,7 +431,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 ### Contact Information
 - **Project Maintainer**: [@shukur-alom](https://github.com/shukur-alom)
-- **Project Repository**: [leaf-diseases-detect](https://github.com/shukur-alom/leaf-diseases-detect)
+- **Project Repository**: [digital-farmer](https://github.com/shukur-alom/digital-farmer)
 - **Issue Tracking**: GitHub Issues for bug reports and feature requests
 - **Email Support**: Available through GitHub contact options
 
@@ -483,7 +477,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 ![Plant Health](https://img.shields.io/badge/Plant%20Health-AI%20Powered-brightgreen?style=for-the-badge&logo=leaf)
 ![Precision Agriculture](https://img.shields.io/badge/Precision%20Agriculture-Innovation-orange?style=for-the-badge&logo=agriculture)
 
-[🚀 **Live Demo**](https://leaf-diseases-detect5.streamlit.app) • [🐛 **Report Issues**](https://github.com/shukur-alom/leaf-diseases-detect/issues) • [💡 **Request Features**](https://github.com/shukur-alom/leaf-diseases-detect/discussions)
+[🚀 **Live Demo**](https://leaf-diseases-detect5.streamlit.app) • [🐛 **Report Issues**](https://github.com/shukur-alom/digital-farmer/issues) • [💡 **Request Features**](https://github.com/shukur-alom/digital-farmer/discussions)
 
 **Star ⭐ this repository if it helped you protect your plants!**
 
