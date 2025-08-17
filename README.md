@@ -13,7 +13,7 @@ An enterprise-grade AI-powered digital farmer system featuring a dual-interface 
 ### 🎯 Core Capabilities
 - **🔍 Advanced Disease Detection**: Identifies 500+ plant diseases across multiple categories (fungal, bacterial, viral, pest-related, nutrient deficiencies)
 - **📊 Precision Severity Assessment**: AI-powered classification of disease severity levels (mild, moderate, severe)
-- ** High-Confidence Scoring**: Provides confidence percentages (0-100%) with advanced uncertainty quantification
+- **High-Confidence Scoring**: Provides confidence percentages (0-100%) with advanced uncertainty quantification
 - **💡 Expert Treatment Recommendations**: Evidence-based, actionable treatment protocols tailored to specific diseases
 - **📋 Comprehensive Symptom Analysis**: Detailed visual symptom identification with causal relationship mapping
 - **⚡ Real-time Processing**: Optimized inference pipeline with sub-5-second response times
